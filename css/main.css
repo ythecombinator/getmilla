@@ -1,0 +1,173 @@
+/* Mila Theme site's styles, by @mabrasil */
+
+html, body {
+	width: 100%; 
+	height: 100%; 
+}
+
+body {
+	background: #282a36;
+	color: #fff;
+	font-family: 'Roboto Slab', serif;
+	font-size: 16px;
+}
+
+a { 
+	color: #fff; 
+}
+
+a:hover { 
+    color: #27ae60;
+	text-decoration: none;
+}
+
+code {
+	color: #8e44ad;
+}
+
+/* Basic Structure
+-------------------------------------------------*/
+
+.layout {
+	min-height: 100%;
+	position: relative;
+	z-index: 3; 
+}
+ 
+.main {
+	margin: 5% auto 0 auto;
+	max-width: 820px;
+	width: 100%; 
+}
+ 
+.new-window {
+	background: #282a36;
+	display: none;
+	left: 0;
+	min-height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 4; 
+}
+
+.new-window .main { 
+	max-width: 600px;
+} 
+
+.title, .text, .editors, .share {
+	text-align: center;
+}
+
+/* Main
+-------------------------------------------------*/
+
+.title {
+	overflow: hidden;
+}
+
+.logo {
+	width: 50%;
+    top: 10px;
+	padding: 0 0 20px;
+}
+
+.text, .editors {
+	margin-bottom: 40px;
+}
+
+.share { 
+	margin-top: 30px;
+}
+
+.share li { 
+	padding: 0; 
+}
+
+.editors a, .share a {
+	border-radius: 150px;
+	border: 2px solid #fff;
+	display: inline-block;
+	font-size: 18px;
+	height: 50px;
+	line-height: 46px;
+	margin: 0 10px;
+	transition: all 0.5s ease-in-out;
+	width: 50px;
+	-webkit-transition: all 0.5s ease-in-out; 
+	   -moz-transition: all 0.5s ease-in-out;
+	    -ms-transition: all 0.5s ease-in-out;
+	     -o-transition: all 0.5s ease-in-out;
+	}
+
+.share a {
+	height: 40px;
+	line-height: 36px;
+	width: 40px;
+	margin: 0 5px;
+}
+
+.editors a:hover, .share a:hover {
+	background: #fff;
+	color: #222;
+}
+
+.main > .close {
+	float: none;
+	opacity: 1;
+	text-shadow: none; 
+	text-align: center;
+}
+
+/* Heart animation */
+
+.heart {
+    color: #c0392b;
+    display: inline-block;
+    position: relative;
+    top: .2em;
+    font-size: 1.4em;
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    transform: scale(.9);
+    -webkit-animation: heart .5s infinite linear alternate-reverse;
+    -moz-animation: heart .5s infinite linear alternate-reverse;
+    animation: heart .5s infinite linear alternate-reverse;
+}
+
+@-webkit-keyframes heart {
+    to {-webkit-transform: scale(1.2);}
+}
+
+@-moz-keyframes heart {
+    to {-moz-transform: scale(1.2);}
+}
+@keyframes heart {
+    to {transform: scale(1.2);}
+}
+
+/* Typography
+-------------------------------------------------*/
+h1, h2, h3, h4 {
+	font-family: 'Lily Script One', cursive;
+	font-weight: 400;
+}
+
+.title > h1 {
+	font-size: 44px;
+	text-shadow: 0 1px 1px #888;
+}
+
+.title > h2:after {
+	background: #fff;
+	content: "";
+	display: block;
+	height: 2px;
+	position: relative;
+	width: 20%;
+	margin: 10px auto;
+}
+
+.main .text {
+	font-size: 18px;
+}
