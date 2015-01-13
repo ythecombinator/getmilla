@@ -1,6 +1,13 @@
 // Milla Theme site's scripts, by @mabrasil 
 
 (function($){
+   	
+   	// Preloader 	 
+   	$(window).load(function() { 
+       	$('#loading').fadeOut();
+        $('#preloader').delay(350).fadeOut('slow'); 
+        $('body').delay(350).css({'overflow':'visible'});
+    }); 
 
 	$(document).ready(function() {
 		
